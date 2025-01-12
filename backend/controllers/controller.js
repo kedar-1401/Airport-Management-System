@@ -7,7 +7,7 @@ const db=mysql.createConnection({
     database:"AirportManagement"
 
 })
-
+    
 const home=(req,res)=>{
 
     try {
@@ -30,7 +30,7 @@ const user=(req,res)=>{
 const signup=(req,res)=>{
     try {
         const sqlget='insert into CLIENTS (fname,mname,lname,phone,email,password) values(?,?,?,?,?,?);'
-
+        
         console.log(req.body);
         const fname=req.body.fname;
         const mname=req.body.mname;
